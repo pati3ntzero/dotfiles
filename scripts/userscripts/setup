@@ -1,0 +1,38 @@
+#!/bin/sh
+
+# Update the system.
+sudo apt update
+sudo apt-get update
+
+apt list --upgradable -a
+
+sudo apt upgrade
+sudo apt-get upgrade
+
+flatpak upgrade
+
+sudo apt full-upgrade
+
+#Install main applications
+sudo apt install -y kitty
+sudo apt install -y gparted
+sudo apt install -y qutebrowser
+sudo apt install -y steam discord
+sudo apt install -y texlive latexmk
+sudo apt install -y zathura
+
+#Networking and cybersecurity apps.
+sudo apt install -y speedtest-cli
+sudo apt install -y virtualbox
+sudo apt install -y metasploit-framework
+
+#Clone config files.
+cd /home/$USER/ # change to the home dir if not present already.
+https://github.com/pati3ntzero/dotfiles.git # clonde the repo.
+
+# move all rc and conf files to home.
+mv /home/$USER/dotfiles/*rc /home/$USER/dotfiles/*.conf /home/$USER/
+
+rm -rf .config/ # remove the .config dir if present and move .conf to home.
+mv /home/$USER/dotfiles/.config /home/$USER/dotfiles/.vim /home/$USER/
+mv /home/$USER/dotfiles/powerlevel10k /home/$USER/ # move the powerlevel10k dir to home.

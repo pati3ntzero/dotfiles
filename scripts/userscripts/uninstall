@@ -1,0 +1,8 @@
+#!/bin/bash
+
+program=$1
+
+sudo apt remove $program
+sudo apt purge $program
+sudo apt autoremove
+sudo apt autoclean
