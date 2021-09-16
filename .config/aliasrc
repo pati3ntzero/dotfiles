@@ -1,0 +1,42 @@
+#vim
+alias vi="vim"
+alias vimconfig="vim ~/.vimrc"
+
+# ZSH
+alias history="history | less"
+alias zshconfig="vim ~/.zshrc"
+alias starshipconfig="vim $HOME/.config/starship.toml"
+alias sourcezsh="source ~/.zshrc"
+
+alias clear="clear && neofetch" # continue to flex.
+
+#System
+#alias logout="gnome-session-quit --force --logout"
+alias reboot="sudo reboot"
+alias poweroff="sudo poweroff"
+
+# Make cleanup from pacman easier.
+alias cleanup='sudo pacman -Rns `pacman -Qtdq`'
+
+# Kitty terminal
+alias icat="kitty +kitten icat"
+alias kittyconfig="vim ~/.config/kitty/kitty.conf"
+
+# qutebrowser
+alias quteconfig="vim ~/.config/qutebrowser/config.py"
+
+#TMUX
+alias tmuxconf="vim ~/.tmux.conf"
+
+#Power management
+alias ideapad-status="ideapad-cm status"
+alias ideapad-enable="ideapad-cm enable"
+alias ideapad-disable="ideapad-cm disable"
+
+#protonvpn
+alias protonvpn="sudo protonvpn"
+
+#misc
+alias cmatrix="cmatrix -br"
+
+alias dotfiles="/usr/bin/git --git-dir=$HOME --work-tree=$HOME"
