@@ -27,6 +27,7 @@ alias quteconfig="vim ~/.config/qutebrowser/config.py"
 
 #TMUX
 alias tmuxconf="vim ~/.tmux.conf"
+alias tmux="tmux -u"
 
 #Power management
 alias ideapad-status="ideapad-cm status"
